@@ -20,7 +20,7 @@ services:
   web:
     build: app
     ports:
-    - 80:80
+    - 8000:8000
   backend:
     build: flask
     ...
@@ -59,7 +59,7 @@ dba87a080821        nginx-flask-mongo_backend   "./server.py"            About a
 d7eea5481c77        mongo                       "docker-entrypoint.s…"   About a minute ago   Up About a minute   27017/tcp              nginx-flask-mongo_mongo_1
 ```
 
-After the application starts, navigate to `http://localhost:80` in your web browser or run:
+After the application starts, navigate to `http://localhost:8000` in your web browser or run:
 ```
 $ curl localhost:80
 Hello from the MongoDB client!
